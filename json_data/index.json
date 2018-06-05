@@ -1,0 +1,103 @@
+{
+  "Google": {
+    "1": {
+      "text": "Google Maps",
+      "links": {
+        "1": "http://www.google.com/",
+        "2": "http://www.google.com/",
+        "3": "http://www.google.com/",
+        "4": "http://www.google.com/",
+        "5": "http://www.google.com/",
+        "6": "http://www.google.com/",
+        "7": "http://www.google.com/",
+        "8": "http://www.google.com/",
+        "9": "http://www.google.com/",
+        "10": "http://www.google.com/"
+      },
+      "info": "info here"
+    },
+    "2": {
+      "text": "Google Jobs",
+      "links": "http://www.google.com/jobs",
+      "info": "This is not required. IT will add hover text to a links."
+    },
+    "3": {
+      "text": "Google Images",
+      "links": "http://www.google.com/images",
+      "info": "Here is some text based information about google."
+    }
+  },
+  "Bing": {
+    "1": {
+      "text": "Bing",
+      "links": "www.bing.com",
+      "info": "Bing's a thing"
+    },
+    "2": {
+      "text": "Bing Maps",
+      "links": "www.bing.com/maps",
+      "info": "Bing Maps is a thing"
+    },
+    "3": {
+      "text": "Bing Images",
+      "links": "www.bing.com/images",
+      "info": "Images"
+    }
+  },
+  "Amazon": {
+    "1": {
+      "text": "Amazon.com",
+      "links": "www.amazon.com",
+      "info": "Buy Stuff"
+    },
+    "2": {
+      "text": "Amazon Movies",
+      "links": "www.amamzon.com/movies",
+      "info": "Theater"
+    }
+  },
+  "Reddit": {
+    "1": {
+      "text": "/r/movies",
+      "links": "www.reddit.com/r/movies",
+      "info": "Blockbuster movies"
+    },
+    "2": {
+      "text": "/r/aww",
+      "links": "www.reddit.com/aww",
+      "info": "Cute Animals"
+    },
+    "3": {
+      "text": "/r/gifs",
+      "links": "www.reddit.com/gifs",
+      "info": "Funny"
+    },
+    "4": {
+      "text": "/r/gifs",
+      "links": "www.reddit.com/gifs",
+      "info": "Funny"
+    },
+    "5": {
+      "text": "/r/gifs",
+      "links": "www.reddit.com/gifs",
+      "info": "Funny"
+    },
+    "6": {
+      "text": "/r/gifs",
+      "links": "www.reddit.com/gifs",
+      "info": "Funny"
+    }
+  },
+  "Amazon": {
+    "1": {
+      "text": "Amazon.com",
+      "links": "www.amazon.com",
+      "info": "Buy Stuff"
+    },
+    "2": {
+      "text": "Amazon Movies",
+      "links": "www.amamzon.com/movies",
+      "info": "Theater"
+    }
+  }
+}
