@@ -7,14 +7,16 @@ def interpret(html_name, json_name):
         with open(json_name, 'r') as file_data:
             json_data = json.load(file_data)
 
+            tile_count = 0
+
             for heading in sorted(json_data):
                 # Create Column
-                index.write('<div class ="column is-size-7 is-narrow">' + "\n")
+                index.write('<div class="tile is-parent">' + "\n")
                 # Create left part of media object
-                index.write(
-                    '<div class="box"><article class="media"><span class="tag is-danger">'
-                    + heading
-                    + "</span>\n")
+                index.write('<div class="box has-background-light"><div class="tile is-child">'
+                            + '<article class="media"><span class="tag is-danger">'
+                            + heading
+                            + "</span>\n")
 
                 # Create center
                 index.write('<div class="media-content"><div class="content">')
@@ -29,7 +31,7 @@ def interpret(html_name, json_name):
                                     json_data[heading][sub_heading]["text"] + '</a>' +
                                     '<div class="navbar-dropdown is-boxed">\n')
 
-                        for link in sorted(json_data[heading][sub_heading]["links"],key=int):
+                        for link in sorted(json_data[heading][sub_heading]["links"], key=int):
                             index.write(
                                 '<a class="navbar-item" href="' +
                                 json_data[heading][sub_heading]["links"][link] + '">' +
@@ -48,6 +50,12 @@ def interpret(html_name, json_name):
                             json_data[heading][sub_heading]["links"] + '">' +
                             json_data[heading][sub_heading]["text"] + "</a>\n")
 
-                index.write('</div></div></article></div></div>')
-            file_data.close()
-            index.close()
+                if tile_count == 3:
+                    index.write('</div></div></article></div></div></div></div>'
+                                + '<div class="tile is-ancestor">')
+                    tile_count = 0
+                else:
+                    index.write('</div></div></article></div></div></div>')
+                    tile_count = tile_count + 1
+        file_data.close()
+        index.close()
